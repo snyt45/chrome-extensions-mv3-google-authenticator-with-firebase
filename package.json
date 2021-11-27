@@ -2,7 +2,8 @@
   "name": "sample-project",
   "version": "0.0.0",
   "scripts": {
-    "build:manifest": "esno src/manifest.ts"
+    "build:manifest": "esno src/manifest.ts",
+    "build:popup": "vite build"
   },
   "dependencies": {
     "vue": "^3.2.16"
