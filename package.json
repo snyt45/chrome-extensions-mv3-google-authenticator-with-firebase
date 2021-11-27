@@ -2,9 +2,7 @@
   "name": "sample-project",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "build:manifest": "esno src/manifest.ts"
   },
   "dependencies": {
     "vue": "^3.2.16"
