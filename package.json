@@ -2,8 +2,10 @@
   "name": "sample-project",
   "version": "0.0.0",
   "scripts": {
+    "build": "run-s clear build:manifest build:popup",
     "build:manifest": "esno src/manifest.ts",
-    "build:popup": "vite build"
+    "build:popup": "vite build",
+    "clear": "rimraf extension/dist extension/manifest.json"
   },
   "dependencies": {
     "vue": "^3.2.16"
