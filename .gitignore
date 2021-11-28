@@ -2,3 +2,5 @@ node_modules
 
 extension/manifest.json
 extension/dist
+
+.env.local
