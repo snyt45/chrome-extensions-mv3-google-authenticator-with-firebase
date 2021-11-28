@@ -8,5 +8,12 @@ const firebaseConfig = {
   messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGINGSENDERID,
   appId: import.meta.env.VITE_FIREBASE_APPID
 }
-const app = initializeApp(firebaseConfig)
-console.log(app)
+initializeApp(firebaseConfig)
+
+// ChromeアプリからGoogleログインしてトークン取得
+chrome.identity.getAuthToken(
+  {interactive: true},
+  (token: string) => {
+    console.log('token', token)
+  }
+)
