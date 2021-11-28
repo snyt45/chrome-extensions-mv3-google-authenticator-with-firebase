@@ -11,6 +11,7 @@
     "vue": "^3.2.16"
   },
   "devDependencies": {
+    "@types/chrome": "0.0.164",
     "@types/fs-extra": "^9.0.13",
     "@types/node": "^16.11.10",
     "@vitejs/plugin-vue": "^1.9.3",
